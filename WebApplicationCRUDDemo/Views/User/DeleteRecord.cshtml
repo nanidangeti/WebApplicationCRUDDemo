@@ -1,0 +1,44 @@
+﻿@model WebApplicationCRUDDemo.Data.UserTable
+
+@{
+    ViewBag.Title = "DeleteRecord";
+}
+
+<h2>DeleteRecord</h2>
+
+<form action="/User/DeleteNewRecord" method="post">
+    <table class="table table-bordered">
+        <tr>
+            <td>Id : </td>
+            <td>
+                <input type="txt" id="txtId" name="txtId" value=@Model.Id />
+            </td>
+        </tr>
+        <tr>
+            <td>Name : </td>
+            <td>
+                <input type="txt" id="txtName" name="txtName" value=@Model.UName />
+            </td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td>
+                <input type="txt" id="txtEmail" name="txtEmail" value=@Model.Email/>
+            </td>
+        </tr>
+        <tr>
+            <td>PNum : </td>
+            <td>
+                <input type="txt" id="txtPNum" name="txtPNum" value=@Model.PNum />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+

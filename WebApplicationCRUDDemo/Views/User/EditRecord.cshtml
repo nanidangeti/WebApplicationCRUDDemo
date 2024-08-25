@@ -1,0 +1,43 @@
+﻿@model WebApplicationCRUDDemo.Data.UserTable
+@{
+    ViewBag.Title = "EditRecord";
+}
+
+<h2>EditRecord</h2>
+<form action="EditRecord" method="post">
+    <table class="table table-bordered">
+        <tr>
+            <td>Id : </td>
+            <td>
+                <input type="txt" id="txtId" name="txtId" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Name : </td>
+            <td>
+                <input type="txt" id="txtName" name="txtName" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td>
+                <input type="txt" id="txtEmail" name="txtEmail" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>PNum : </td>
+            <td>
+                <input type="txt" id="txtPNum" name="txtPNum" value="" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+
