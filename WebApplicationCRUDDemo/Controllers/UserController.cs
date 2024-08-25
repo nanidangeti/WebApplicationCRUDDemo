@@ -48,6 +48,7 @@ namespace WebApplicationCRUDDemo.Controllers
 
             return RedirectToAction("GetAllUsers");
         }
+        //Edit new user
         [HttpGet]
         public ActionResult EditRecord(int? id)
         {
