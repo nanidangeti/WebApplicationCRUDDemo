@@ -28,6 +28,7 @@ namespace WebApplicationCRUDDemo.Controllers
             var result = userDbEntities.UserTables.FirstOrDefault(u => u.Id == id);
             return View(result);
         }
+        //Add new user
         [HttpGet]
         public ActionResult AddNewUser()
         {
